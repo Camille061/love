@@ -20,18 +20,23 @@
     <button id="black-btn">กด</button>
     </div>
 
+    <audio id="iloveyou" src="mp3/i love you.mp3" preload="auto"></audio>
 
     <script>
 let front = document.getElementById("front")
 let black = document.getElementById("black")
 let frontBtn = document.getElementById("front-btn")
 let blackBtn = document.getElementById("black-btn")
+let sound = document.getElementById("iloveyou")
 
 front.hidden = false
 
 frontBtn.onclick = () => {
     front.hidden = true
     black.hidden = false
+    sound.currentTime = 0;
+    sound.volume = 0.4;
+    sound.play();
 }
 
 blackBtn.onclick = () => {
