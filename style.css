@@ -38,3 +38,20 @@ padding: 10px;
 body {
     background: linear-gradient(to right, #fcb5b5, #fff);
 }
+
+.text {
+    position: relative;
+    bottom: 170px;
+    left: 20px;
+    font-size: x-large;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+
+/* git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Camille061/love.git
+git push -u origin main */
