@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div>
+    <div id="front" hidden>
+    <img class="img" width="300px" height="250px" src="img/front.jpg" alt="">  <br>
+    <button id="front-btn">กด</button>
+    </div>
+
+      <div id="black" hidden>
+    <img  class="img" width="300px" height="250px" src="img/black.jpg" alt=""> <br>
+    <button id="black-btn">กด</button>
+    </div>
+
+
+    <script>
+let front = document.getElementById("front")
+let black = document.getElementById("black")
+let frontBtn = document.getElementById("front-btn")
+let blackBtn = document.getElementById("black-btn")
+
+front.hidden = false
+
+frontBtn.onclick = () => {
+    front.hidden = true
+    black.hidden = false
+}
+
+blackBtn.onclick = () => {
+    front.hidden = false
+    black.hidden = true
+}
+
+
+    </script>
+</body>
+</html>
